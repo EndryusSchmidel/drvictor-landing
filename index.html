@@ -82,9 +82,9 @@
   .hero-actions{display:flex;gap:16px;flex-wrap:wrap}
   .hero-photo{border-radius:var(--radius);overflow:hidden;position:relative;background:#2a2622}
   .hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 30%;filter:saturate(.94)}
-  .hero-badge{position:absolute;left:28px;bottom:28px;background:rgba(255,253,248,.96);backdrop-filter:blur(6px);border-radius:var(--radius-sm);border-top:2px solid var(--brass);padding:14px 20px;box-shadow:0 20px 40px rgba(20,18,15,.18)}
-  .hero-badge img{display:block;width:118px;height:auto}
-  .hero-badge span{display:block;margin-top:8px;font-size:.7rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+  .hero-badge{position:absolute;left:28px;bottom:28px;background:rgba(255,253,248,.96);backdrop-filter:blur(6px);border-radius:var(--radius-sm);border-top:2px solid var(--brass);padding:16px 22px;box-shadow:0 20px 40px rgba(20,18,15,.18)}
+  .hero-badge strong{display:block;font-family:'Fraunces',serif;font-weight:500;color:var(--deep);font-size:.98rem}
+  .hero-badge span{display:block;margin-top:3px;font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
 
   /* About */
   .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px;align-items:center}
@@ -282,7 +282,7 @@
       <div class="hero-photo">
         <img src="dr-victor-800.webp" srcset="dr-victor-480.webp 480w, dr-victor-800.webp 800w, dr-victor.webp 1080w" sizes="(max-width:860px) calc(100vw - 32px), 576px" width="1080" height="1080" alt="Retrato do Dr. Victor Camillo, endocrinologista" data-i18n-attr="alt:hero.alt" fetchpriority="high">
         <div class="hero-badge">
-          <img src="logo-lockup.webp" width="340" height="233" alt="Dr. Victor Camillo — Endocrinologia"><span>CRM-RJ 52.131383-5</span>
+          <strong>Dr. Victor Camillo</strong><span>CRM-RJ 52.131383-5</span>
         </div>
       </div>
     </div>

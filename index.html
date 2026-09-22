@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Victor Camillo | Endocrinologia & Metabologia – Rio de Janeiro</title>
+<meta name="description" content="Dr. Victor Camillo – Endocrinologista e Metabologista no Rio de Janeiro. Diabetes, obesidade, tireoide, distúrbios hormonais e metabólicos. CRM-RJ 52.131383-5.">
+<meta property="og:title" content="Dr. Victor Camillo | Endocrinologia & Metabologia">
+<meta property="og:description" content="Cuidado endocrinológico individualizado, baseado em evidências.">
+<meta property="og:image" content="dr-victor.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#24416E;
+    --navy-2:#2D4874;
+    --navy-dark:#1A3155;
+    --cyan:#0B9DCF;
+    --cyan-dark:#0987B3;
+    --cream:#F5EEE7;
+    --light:#F2F3F6;
+    --ink:#1D1E20;
+    --muted:#5B6270;
+    --white:#fff;
+    --radius:24px;
+    --maxw:1200px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;scroll-padding-top:88px}
+  body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,h4{font-family:Montserrat,sans-serif;line-height:1.2;font-weight:600}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .container{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  section{padding:96px 0}
+  .eyebrow{display:inline-block;font-size:.8rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--cyan);margin-bottom:14px}
+  .section-title{font-size:clamp(1.8rem,3.4vw,2.6rem);color:var(--navy);max-width:720px}
+  .section-lead{color:var(--muted);max-width:640px;margin-top:16px;font-size:1.05rem}
+  .center{text-align:center;margin-left:auto;margin-right:auto}
+
+  .btn{display:inline-flex;align-items:center;gap:10px;background:var(--cyan);color:var(--white);font-weight:600;font-size:.95rem;padding:14px 28px;border-radius:999px;border:0;cursor:pointer;transition:background .2s,transform .2s}
+  .btn:hover{background:var(--cyan-dark);transform:translateY(-2px)}
+  .btn svg{width:18px;height:18px}
+  .btn-ghost{background:transparent;border:1.5px solid rgba(255,255,255,.5)}
+  .btn-ghost:hover{background:rgba(255,255,255,.1)}
+
+  /* Header */
+  header{position:sticky;top:0;z-index:50;background:var(--navy)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:76px}
+  .brand{display:flex;align-items:center;gap:12px;color:var(--white)}
+  .brand-mark{width:40px;height:40px;border-radius:12px;background:var(--cyan);display:grid;place-items:center;font-family:Montserrat;font-weight:700;font-size:1rem}
+  .brand-name{font-family:Montserrat;font-weight:600;font-size:1.05rem;line-height:1.1}
+  .brand-name small{display:block;font-family:Inter;font-weight:400;font-size:.72rem;opacity:.75;letter-spacing:.04em}
+  .nav-links{display:flex;gap:32px;list-style:none}
+  .nav-links a{color:var(--cream);font-size:.85rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;opacity:.85;transition:opacity .2s}
+  .nav-links a:hover{opacity:1}
+  .nav .btn{padding:11px 22px}
+  .nav-actions{display:flex;align-items:center;gap:16px}
+  .lang-switch{display:flex;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:999px;padding:3px}
+  .lang-switch button{font:600 .75rem/1 Inter,sans-serif;letter-spacing:.06em;color:var(--cream);background:none;border:0;padding:7px 11px;border-radius:999px;cursor:pointer;opacity:.75;transition:background .2s,opacity .2s}
+  .lang-switch button:hover{opacity:1}
+  .lang-switch button[aria-pressed="true"]{background:var(--cyan);color:var(--white);opacity:1}
+  .menu-toggle{display:none;background:none;border:0;color:var(--white);cursor:pointer}
+  .menu-toggle svg{width:28px;height:28px}
+
+  /* Hero */
+  .hero{padding:24px 0 48px}
+  .hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;min-height:620px}
+  .hero-card{background:var(--navy);border-radius:var(--radius);padding:64px 56px;color:var(--white);display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden}
+  .hero-card::after{content:"";position:absolute;right:-120px;bottom:-120px;width:320px;height:320px;border-radius:50%;border:48px solid rgba(11,157,207,.18)}
+  .hero-card .eyebrow{color:#7FD3F0}
+  .hero-card h1{font-size:clamp(2.2rem,4.4vw,3.6rem);margin-bottom:22px;position:relative;z-index:1}
+  .hero-card p{color:var(--cream);opacity:.9;font-size:1.08rem;max-width:480px;margin-bottom:36px;position:relative;z-index:1}
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap;position:relative;z-index:1}
+  .hero-photo{border-radius:var(--radius);overflow:hidden;position:relative;background:#2a2622}
+  .hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
+  .hero-badge{position:absolute;left:24px;bottom:24px;background:rgba(255,255,255,.95);backdrop-filter:blur(6px);border-radius:16px;padding:14px 20px;display:flex;align-items:center;gap:12px;box-shadow:0 10px 30px rgba(0,0,0,.2)}
+  .hero-badge .dot{width:40px;height:40px;border-radius:50%;background:var(--cyan);display:grid;place-items:center;color:#fff}
+  .hero-badge .dot svg{width:20px;height:20px}
+  .hero-badge strong{display:block;font-family:Montserrat;color:var(--navy);font-size:.95rem}
+  .hero-badge span{font-size:.8rem;color:var(--muted)}
+
+  /* About */
+  .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:center}
+  .about-img{border-radius:var(--radius);overflow:hidden;aspect-ratio:4/5;background:#2a2622}
+  .about-img img{width:100%;height:100%;object-fit:cover;object-position:center 20%}
+  .about-text p{color:var(--muted);margin-top:18px;font-size:1.03rem}
+  .about-list{list-style:none;margin-top:28px;display:grid;gap:14px}
+  .about-list li{display:flex;gap:12px;align-items:flex-start}
+  .about-list svg{flex:none;width:22px;height:22px;color:var(--cyan);margin-top:2px}
+  .crm{margin-top:28px;display:inline-block;background:var(--white);border-radius:12px;padding:10px 18px;font-size:.88rem;color:var(--navy);font-weight:600}
+
+  /* Services */
+  .services{background:var(--white)}
+  .services-head{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap;margin-bottom:56px}
+  .services-head .section-lead{margin-top:0}
+  .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .service{background:var(--light);border-radius:20px;padding:36px 32px;transition:background .25s,color .25s,transform .25s}
+  .service:hover{background:var(--navy);color:var(--white);transform:translateY(-4px)}
+  .service:hover p{color:var(--cream)}
+  .service:hover .icon{background:var(--cyan);color:#fff}
+  .service .icon{width:56px;height:56px;border-radius:16px;background:var(--white);color:var(--cyan);display:grid;place-items:center;margin-bottom:24px;transition:background .25s,color .25s}
+  .service .icon svg{width:28px;height:28px}
+  .service h3{font-size:1.2rem;margin-bottom:12px}
+  .service p{color:var(--muted);font-size:.96rem;transition:color .25s}
+
+  /* Why */
+  .why{background:var(--navy);color:var(--white)}
+  .why .section-title{color:var(--white)}
+  .why .section-lead{color:var(--cream);opacity:.85}
+  .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px}
+  .why-item{border-top:1px solid rgba(255,255,255,.2);padding-top:28px}
+  .why-num{font-family:Montserrat;font-size:.9rem;color:var(--cyan);font-weight:700;margin-bottom:12px}
+  .why-item h3{font-size:1.3rem;margin-bottom:12px}
+  .why-item p{color:var(--cream);opacity:.85}
+
+  /* Testimonials */
+  .testimonials{background:var(--navy)}
+  .testimonials .section-title{color:var(--white)}
+  .testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px}
+  .testimonial{background:var(--navy-2);border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:36px 32px;display:flex;flex-direction:column;gap:20px;color:var(--cream)}
+  .testimonial .quote{width:36px;height:36px;color:var(--cyan)}
+  .testimonial p{flex:1;font-size:1.02rem;opacity:.9}
+  .testimonial .stars{color:#F5B83D;letter-spacing:3px;font-size:.95rem}
+  .person{display:flex;align-items:center;gap:14px;border-top:1px solid rgba(255,255,255,.12);padding-top:20px}
+  .avatar{width:44px;height:44px;border-radius:50%;background:var(--cyan);color:#fff;display:grid;place-items:center;font-family:Montserrat;font-weight:600}
+  .person strong{display:block;font-family:Montserrat;color:var(--white);font-size:.98rem}
+  .person span{font-size:.82rem;opacity:.7}
+
+  /* Steps */
+  .steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:56px;counter-reset:step}
+  .step{background:var(--white);border-radius:20px;padding:32px 28px;position:relative}
+  .step::before{counter-increment:step;content:"0" counter(step);font-family:Montserrat;font-weight:700;font-size:2.4rem;color:var(--cream);display:block;margin-bottom:8px;-webkit-text-stroke:1px var(--cyan);color:transparent}
+  .step h3{font-size:1.1rem;color:var(--navy);margin-bottom:8px}
+  .step p{color:var(--muted);font-size:.94rem}
+
+  /* FAQ */
+  .faq{background:var(--white)}
+  .faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px}
+  .faq-list{display:grid;gap:12px}
+  details{background:var(--light);border-radius:16px;padding:22px 26px}
+  summary{cursor:pointer;list-style:none;font-family:Montserrat;font-weight:600;color:var(--navy);display:flex;justify-content:space-between;gap:16px;align-items:center}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";font-size:1.5rem;color:var(--cyan);line-height:1;transition:transform .2s}
+  details[open]:not(.closing) summary::after{transform:rotate(45deg)}
+  details p{color:var(--muted);margin-top:14px}
+
+  /* Contact */
+  .contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:24px}
+  .contact-form{background:var(--white);border-radius:var(--radius);padding:48px}
+  .contact-form h2{margin-bottom:8px}
+  .contact-form > p{color:var(--muted);margin-bottom:28px}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .field{display:flex;flex-direction:column;gap:6px;margin-bottom:16px}
+  .field label{font-size:.85rem;font-weight:500;color:var(--navy)}
+  .field input,.field textarea,.field select{font:inherit;padding:14px 16px;border-radius:12px;border:1.5px solid #E1E3E8;background:var(--light);color:var(--ink);transition:border-color .2s}
+  .field input:focus,.field textarea:focus,.field select:focus{outline:0;border-color:var(--cyan);background:#fff}
+  .field textarea{min-height:120px;resize:vertical}
+  .form-note{font-size:.8rem;color:var(--muted);margin-top:14px}
+  .contact-info{background:var(--navy);color:var(--white);border-radius:var(--radius);padding:48px;display:flex;flex-direction:column;gap:28px}
+  .contact-info h3{font-size:1.5rem}
+  .info-item{display:flex;gap:16px}
+  .info-item .ic{flex:none;width:44px;height:44px;border-radius:12px;background:rgba(255,255,255,.08);display:grid;place-items:center;color:var(--cyan)}
+  .info-item .ic svg{width:22px;height:22px}
+  .info-item strong{display:block;font-family:Montserrat;font-size:.95rem;margin-bottom:2px}
+  .info-item span,.info-item a{color:var(--cream);opacity:.85;font-size:.95rem}
+  .info-item a:hover{opacity:1;text-decoration:underline}
+
+  /* Map */
+  .map-wrap{grid-column:1/-1;position:relative;border-radius:var(--radius);overflow:hidden;background:var(--light);height:400px}
+  .map-wrap iframe{width:100%;height:100%;border:0;display:block}
+  .map-link{position:absolute;right:20px;top:20px;box-shadow:0 10px 25px rgba(0,0,0,.2)}
+
+  @media (min-width:861px){
+    .contact-grid{grid-template-rows:auto 1fr;row-gap:0}
+    .contact-form{grid-row:1/3}
+    .contact-info{border-radius:var(--radius) var(--radius) 0 0;padding-bottom:28px}
+    .map-wrap{grid-column:2;grid-row:2;height:auto;min-height:300px;background:var(--navy);border-radius:0 0 var(--radius) var(--radius);padding:0 48px 48px;overflow:visible;margin-top:-1px}
+    .map-wrap iframe{border-radius:16px;min-height:252px}
+    .map-wrap{padding-top:28px}
+    .map-wrap::before{content:"";position:absolute;top:0;left:48px;right:48px;height:1px;background:rgba(255,255,255,.14)}
+    .map-link{top:44px;right:64px;padding:10px 18px}
+  }
+
+  /* Footer */
+  footer{background:var(--navy-dark);color:var(--cream);padding:48px 0 32px}
+  .foot{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+  .foot-links{display:flex;gap:24px;list-style:none;font-size:.9rem}
+  .foot-links a{opacity:.8}.foot-links a:hover{opacity:1}
+  .foot-bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:32px;padding-top:24px;font-size:.8rem;opacity:.7;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+  /* WhatsApp float */
+  .wa-float{position:fixed;right:22px;bottom:22px;z-index:60;width:58px;height:58px;border-radius:50%;background:#25D366;color:#fff;display:grid;place-items:center;box-shadow:0 10px 25px rgba(0,0,0,.25);transition:transform .2s}
+  .wa-float:hover{transform:scale(1.08)}
+  .wa-float svg{width:30px;height:30px}
+
+  /* Reveal */
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+  /* Responsive */
+  @media (max-width:1100px){
+    .nav-links,.nav .btn{display:none}
+    .menu-toggle{display:block}
+    .nav-links.open{display:flex;flex-direction:column;position:absolute;top:76px;left:0;right:0;background:var(--navy);padding:16px 24px 28px;gap:20px;border-top:1px solid rgba(255,255,255,.1)}
+  }
+  @media (max-width:1024px){
+    .services-grid,.why-grid{grid-template-columns:repeat(2,1fr)}
+    .steps-grid{grid-template-columns:repeat(2,1fr)}
+    .about-grid{gap:48px}
+  }
+  @media (max-width:860px){
+    section{padding:72px 0}
+    .nav-links,.nav .btn{display:none}
+    .menu-toggle{display:block}
+    .nav-links.open{display:flex;flex-direction:column;position:absolute;top:76px;left:0;right:0;background:var(--navy);padding:16px 24px 28px;gap:20px;border-top:1px solid rgba(255,255,255,.1)}
+    .hero-grid{grid-template-columns:1fr;min-height:0}
+    .hero-card{padding:48px 32px}
+    .hero-photo{aspect-ratio:1/1}
+    .about-grid,.faq-grid,.contact-grid,.testimonials-grid{grid-template-columns:1fr}
+    .about-img{display:none}
+    .faq-grid{gap:32px}
+    .contact-form,.contact-info{padding:36px 28px}
+    .map-wrap{height:320px}
+    .map-link{right:12px;top:12px;padding:10px 18px}
+  }
+  @media (max-width:600px){
+    .container{padding:0 16px}
+    .services-grid,.why-grid,.steps-grid,.form-row{grid-template-columns:1fr}
+    .hero-card{padding:40px 24px}
+    .hero-badge{left:16px;bottom:16px;right:16px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a href="#inicio" class="brand" aria-label="Dr. Victor Camillo – início" data-i18n-attr="aria-label:brand.home">
+      <div class="brand-mark">VC</div>
+      <div class="brand-name">Dr. Victor Camillo<small data-i18n="brand.sub">Endocrinologia & Metabologia</small></div>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#inicio" data-i18n="nav.home">Início</a></li>
+      <li><a href="#sobre" data-i18n="nav.about">Sobre</a></li>
+      <li><a href="#atendimento" data-i18n="nav.services">Atendimento</a></li>
+      <li><a href="#duvidas" data-i18n="nav.faq">Dúvidas</a></li>
+      <li><a href="#contato" data-i18n="nav.contact">Contato</a></li>
+    </ul>
+    <div class="nav-actions">
+      <div class="lang-switch" role="group" aria-label="Idioma / Language">
+        <button type="button" data-lang="pt" aria-pressed="true">PT</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a href="#contato" class="btn" data-i18n="cta.book">Agendar consulta</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" data-i18n-attr="aria-label:nav.menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="container hero-grid">
+      <div class="hero-card">
+        <span class="eyebrow" data-i18n="hero.eyebrow">Endocrinologia & Metabologia · Rio de Janeiro</span>
+        <h1 data-i18n="hero.title">Equilíbrio hormonal,<br>saúde em cada fase.</h1>
+        <p data-i18n="hero.text">Dr. Victor Camillo oferece um acompanhamento endocrinológico próximo, individualizado e baseado em evidências científicas — para você entender o seu corpo e cuidar do seu metabolismo com segurança.</p>
+        <div class="hero-actions">
+          <a href="#contato" class="btn">
+            <span data-i18n="cta.book">Agendar consulta</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#atendimento" class="btn btn-ghost" data-i18n="hero.areas">Áreas de atuação</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="dr-victor-800.webp" srcset="dr-victor-480.webp 480w, dr-victor-800.webp 800w, dr-victor.webp 1080w" sizes="(max-width:860px) calc(100vw - 32px), 576px" width="1080" height="1080" alt="Retrato do Dr. Victor Camillo, endocrinologista" data-i18n-attr="alt:hero.alt" fetchpriority="high">
+        <div class="hero-badge">
+          <div class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+          <div><strong>Dr. Victor Camillo</strong><span>CRM-RJ 52.131383-5</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre">
+    <div class="container about-grid">
+      <div class="about-img reveal"><img src="dr-victor-800.webp" srcset="dr-victor-480.webp 480w, dr-victor-800.webp 800w, dr-victor.webp 1080w" sizes="(max-width:1024px) 45vw, 500px" width="1080" height="1080" alt="Dr. Victor Camillo" loading="lazy"></div>
+      <div class="about-text reveal">
+        <span class="eyebrow" data-i18n="about.eyebrow">Sobre o médico</span>
+        <h2 class="section-title" data-i18n="about.title">Cuidado profissional com um olhar humano</h2>
+        <p data-i18n="about.p1">Sou o Dr. Victor Camillo, médico dedicado à Endocrinologia e Metabologia — a especialidade que cuida dos hormônios e de como eles influenciam energia, peso, sono, humor, fertilidade e a saúde a longo prazo.</p>
+        <p data-i18n="about.p2">Acredito em consultas sem pressa, com escuta atenta e explicações claras. Cada plano de tratamento é construído junto com o paciente, respeitando sua rotina, seus objetivos e sua história.</p>
+        <ul class="about-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg><span data-i18n="about.l1">Avaliação completa e individualizada</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg><span data-i18n="about.l2">Condutas baseadas nas diretrizes científicas mais atuais</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg><span data-i18n="about.l3">Acompanhamento contínuo e próximo</span></li>
+        </ul>
+        <div class="crm">CRM-RJ 52.131383-5</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ATENDIMENTO -->
+  <section class="services" id="atendimento">
+    <div class="container">
+      <div class="services-head reveal">
+        <div>
+          <span class="eyebrow" data-i18n="svc.eyebrow">Áreas de atuação</span>
+          <h2 class="section-title" data-i18n="svc.title">Cuidado endocrinológico completo</h2>
+        </div>
+        <p class="section-lead" data-i18n="svc.lead">Da prevenção ao acompanhamento de condições crônicas, com atenção a cada detalhe do seu metabolismo.</p>
+      </div>
+      <div class="services-grid">
+        <article class="service reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.7s6 6.4 6 11a6 6 0 0 1-12 0c0-4.6 6-11 6-11z"/></svg></div>
+          <h3 data-i18n="svc.1.t">Diabetes e pré-diabetes</h3>
+          <p data-i18n="svc.1.d">Diagnóstico, controle glicêmico e prevenção de complicações, com orientação prática para o dia a dia.</p>
+        </article>
+        <article class="service reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></div>
+          <h3 data-i18n="svc.2.t">Obesidade e controle de peso</h3>
+          <p data-i18n="svc.2.d">Tratamento médico da obesidade com abordagem individualizada, focada em saúde e sustentabilidade.</p>
+        </article>
+        <article class="service reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8c-2-3-7-3-8 1-1 5 4 9 8 11 4-2 9-6 8-11-1-4-6-4-8-1z"/></svg></div>
+          <h3 data-i18n="svc.3.t">Tireoide</h3>
+          <p data-i18n="svc.3.d">Hipotireoidismo, hipertireoidismo, nódulos e tireoidites — avaliação e acompanhamento.</p>
+        </article>
+        <article class="service reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg></div>
+          <h3 data-i18n="svc.4.t">Distúrbios hormonais</h3>
+          <p data-i18n="svc.4.d">Alterações de hormônios sexuais, adrenais e hipofisários, incluindo SOP e menopausa.</p>
+        </article>
+        <article class="service reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7z"/></svg></div>
+          <h3 data-i18n="svc.5.t">Colesterol e metabolismo</h3>
+          <p data-i18n="svc.5.d">Dislipidemias, resistência à insulina e síndrome metabólica, com foco em saúde cardiovascular.</p>
+        </article>
+        <article class="service reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.8 2.8 0 0 1 4 4L7 21l-4 1 1-4z"/><path d="m15 5 4 4"/></svg></div>
+          <h3 data-i18n="svc.6.t">Saúde óssea</h3>
+          <p data-i18n="svc.6.d">Prevenção e tratamento da osteoporose e acompanhamento dos níveis de vitamina D e cálcio.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFERENCIAIS -->
+  <section class="why">
+    <div class="container">
+      <div class="reveal">
+        <span class="eyebrow" data-i18n="why.eyebrow">Diferenciais</span>
+        <h2 class="section-title" data-i18n="why.title">Por que escolher o Dr. Victor</h2>
+        <p class="section-lead" data-i18n="why.lead">Uma medicina que une ciência, escuta e parceria — para decisões seguras sobre a sua saúde.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-item reveal">
+          <div class="why-num">01</div>
+          <h3 data-i18n="why.1.t">Abordagem individualizada</h3>
+          <p data-i18n="why.1.d">Cada paciente é único. A consulta considera sua história, seus hábitos e seus objetivos antes de qualquer conduta.</p>
+        </div>
+        <div class="why-item reveal">
+          <div class="why-num">02</div>
+          <h3 data-i18n="why.2.t">Medicina baseada em evidências</h3>
+          <p data-i18n="why.2.d">Atualização constante e condutas fundamentadas nas diretrizes científicas mais recentes, com segurança em primeiro lugar.</p>
+        </div>
+        <div class="why-item reveal">
+          <div class="why-num">03</div>
+          <h3 data-i18n="why.3.t">Confiança e clareza</h3>
+          <p data-i18n="why.3.d">Explicações simples sobre exames e tratamentos, para que você participe ativamente das decisões sobre a sua saúde.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section>
+    <div class="container">
+      <div class="center reveal" style="text-align:center">
+        <span class="eyebrow" data-i18n="steps.eyebrow">Como funciona</span>
+        <h2 class="section-title center" data-i18n="steps.title">Sua jornada de cuidado</h2>
+      </div>
+      <div class="steps-grid">
+        <div class="step reveal"><h3 data-i18n="steps.1.t">Agendamento</h3><p data-i18n="steps.1.d">Entre em contato pelo WhatsApp ou formulário e escolha o melhor horário.</p></div>
+        <div class="step reveal"><h3 data-i18n="steps.2.t">Consulta completa</h3><p data-i18n="steps.2.d">Escuta detalhada, exame físico e análise do seu histórico e exames anteriores.</p></div>
+        <div class="step reveal"><h3 data-i18n="steps.3.t">Plano personalizado</h3><p data-i18n="steps.3.d">Definição conjunta das metas e da conduta, com orientações claras.</p></div>
+        <div class="step reveal"><h3 data-i18n="steps.4.t">Acompanhamento</h3><p data-i18n="steps.4.d">Retornos periódicos para ajustes e monitoramento da sua evolução.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS — textos provisórios: substituir pelos depoimentos reais autorizados pelos pacientes -->
+  <section class="testimonials" id="depoimentos">
+    <div class="container">
+      <div class="reveal" style="text-align:center">
+        <span class="eyebrow" data-i18n="test.eyebrow">Depoimentos</span>
+        <h2 class="section-title center" data-i18n="test.title">Depoimentos de pacientes</h2>
+      </div>
+      <div class="testimonials-grid">
+        <article class="testimonial reveal">
+          <svg class="quote" viewBox="0 0 24 24" fill="currentColor"><path d="M9.6 5C5.9 6.4 3.5 9.6 3.5 13.6V19h6.4v-6.3H6.8c0-2.6 1.4-4.6 3.8-5.6zm10.5 0c-3.7 1.4-6.1 4.6-6.1 8.6V19h6.4v-6.3h-3.1c0-2.6 1.4-4.6 3.8-5.6z"/></svg>
+          <div class="stars" aria-label="5 estrelas" data-i18n-attr="aria-label:test.stars">★★★★★</div>
+          <p data-i18n="test.1">O Dr. Victor realmente escuta. Explica tudo com clareza e faz a gente se sentir acolhido em cada etapa do acompanhamento.</p>
+          <div class="person"><div class="avatar">P</div><div><strong data-i18n="test.name">Nome do paciente</strong><span data-i18n="test.role">Paciente</span></div></div>
+        </article>
+        <article class="testimonial reveal">
+          <svg class="quote" viewBox="0 0 24 24" fill="currentColor"><path d="M9.6 5C5.9 6.4 3.5 9.6 3.5 13.6V19h6.4v-6.3H6.8c0-2.6 1.4-4.6 3.8-5.6zm10.5 0c-3.7 1.4-6.1 4.6-6.1 8.6V19h6.4v-6.3h-3.1c0-2.6 1.4-4.6 3.8-5.6z"/></svg>
+          <div class="stars" aria-label="5 estrelas" data-i18n-attr="aria-label:test.stars">★★★★★</div>
+          <p data-i18n="test.2">Profissional atencioso e cuidadoso. Nunca me senti apressado na consulta — dá para ver que ele se importa de verdade com os pacientes.</p>
+          <div class="person"><div class="avatar">P</div><div><strong data-i18n="test.name">Nome do paciente</strong><span data-i18n="test.role">Paciente</span></div></div>
+        </article>
+        <article class="testimonial reveal">
+          <svg class="quote" viewBox="0 0 24 24" fill="currentColor"><path d="M9.6 5C5.9 6.4 3.5 9.6 3.5 13.6V19h6.4v-6.3H6.8c0-2.6 1.4-4.6 3.8-5.6zm10.5 0c-3.7 1.4-6.1 4.6-6.1 8.6V19h6.4v-6.3h-3.1c0-2.6 1.4-4.6 3.8-5.6z"/></svg>
+          <div class="stars" aria-label="5 estrelas" data-i18n-attr="aria-label:test.stars">★★★★★</div>
+          <p data-i18n="test.3">Depois de muito procurar, encontrei um médico que une conhecimento e empatia. Recomendo muito!</p>
+          <div class="person"><div class="avatar">P</div><div><strong data-i18n="test.name">Nome do paciente</strong><span data-i18n="test.role">Paciente</span></div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="duvidas">
+    <div class="container faq-grid">
+      <div class="reveal">
+        <span class="eyebrow" data-i18n="faq.eyebrow">Dúvidas frequentes</span>
+        <h2 class="section-title" data-i18n="faq.title">Perguntas comuns</h2>
+        <p class="section-lead" data-i18n="faq.lead">Não encontrou sua dúvida? Fale diretamente com a equipe pelo WhatsApp.</p>
+      </div>
+      <div class="faq-list reveal">
+        <details open>
+          <summary data-i18n="faq.1.q">O que faz um endocrinologista?</summary>
+          <p data-i18n="faq.1.a">O endocrinologista cuida das glândulas e hormônios do corpo — como tireoide, pâncreas, adrenais e hipófise — e de condições metabólicas como diabetes, obesidade e colesterol alto.</p>
+        </details>
+        <details>
+          <summary data-i18n="faq.2.q">Quando devo procurar um endocrinologista?</summary>
+          <p data-i18n="faq.2.a">Em casos de alterações de peso sem causa aparente, cansaço excessivo, glicemia ou colesterol alterados, alterações na tireoide, irregularidade menstrual, queda de cabelo ou sintomas relacionados à menopausa, entre outros.</p>
+        </details>
+        <details>
+          <summary data-i18n="faq.3.q">O que levar na primeira consulta?</summary>
+          <p data-i18n="faq.3.a">Traga exames recentes (de preferência dos últimos 6 a 12 meses), a lista de medicamentos em uso e, se possível, laudos de exames de imagem anteriores.</p>
+        </details>
+        <details>
+          <summary data-i18n="faq.4.q">Há atendimento por teleconsulta?</summary>
+          <p data-i18n="faq.4.a">Consulte a disponibilidade de teleconsulta diretamente com a equipe pelo WhatsApp.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato">
+    <div class="container contact-grid">
+      <form class="contact-form reveal" id="contactForm">
+        <span class="eyebrow" data-i18n="form.eyebrow">Agendamento</span>
+        <h2 class="section-title" data-i18n="form.title">Sua saúde começa com uma conversa</h2>
+        <p data-i18n="form.text">Preencha os dados abaixo e você será direcionado ao WhatsApp para finalizar o agendamento.</p>
+        <div class="form-row">
+          <div class="field"><label for="nome" data-i18n="form.name">Nome*</label><input id="nome" name="nome" required autocomplete="name" placeholder="Seu nome completo" data-i18n-attr="placeholder:form.namePh"></div>
+          <div class="field"><label for="tel" data-i18n="form.phone">Telefone*</label><input id="tel" name="tel" type="tel" required autocomplete="tel" placeholder="(21) 9 0000-0000" data-i18n-attr="placeholder:form.phonePh"></div>
+        </div>
+        <div class="field">
+          <label for="motivo" data-i18n="form.reason">Motivo da consulta</label>
+          <select id="motivo" name="motivo">
+            <option data-i18n="form.opt1">Primeira consulta</option>
+            <option data-i18n="form.opt2">Retorno</option>
+            <option data-i18n="form.opt3">Diabetes</option>
+            <option data-i18n="form.opt4">Obesidade / controle de peso</option>
+            <option data-i18n="form.opt5">Tireoide</option>
+            <option data-i18n="form.opt6">Distúrbios hormonais</option>
+            <option data-i18n="form.opt7">Outro</option>
+          </select>
+        </div>
+        <div class="field"><label for="msg" data-i18n="form.msg">Mensagem</label><textarea id="msg" name="msg" placeholder="Conte brevemente como podemos ajudar" data-i18n-attr="placeholder:form.msgPh"></textarea></div>
+        <button type="submit" class="btn">
+          <span data-i18n="form.submit">Enviar pelo WhatsApp</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+        <p class="form-note" data-i18n="form.note">Não compartilhe informações sensíveis de saúde por aqui — elas serão tratadas na consulta.</p>
+      </form>
+
+      <aside class="contact-info reveal">
+        <h3 data-i18n="info.title">Informações</h3>
+        <div class="info-item">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><strong data-i18n="info.address">Endereço</strong><span>Av. das Américas, 500 – Barra da Tijuca, Rio de Janeiro – RJ</span></div>
+        </div>
+        <div class="info-item">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></div>
+          <div><strong>WhatsApp</strong><a href="#" class="wa-link">(21) 99306-5466</a></div>
+        </div>
+        <div class="info-item">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></div>
+          <div><strong>Instagram</strong><a href="https://www.instagram.com/drvictorcamillo/" target="_blank" rel="noopener">@drvictorcamillo</a></div>
+        </div>
+        <div class="info-item">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+          <div><strong data-i18n="info.hours">Horário de atendimento</strong><span data-i18n="info.hoursVal">[Seg–Sex: 00h às 00h]</span></div>
+        </div>
+      </aside>
+
+      <!-- MAPA — trocar o endereço em "q=" (nos dois links) pelo endereço real do consultório -->
+      <div class="map-wrap reveal">
+        <iframe src="https://maps.google.com/maps?q=Av.+das+Am%C3%A9ricas,+500+-+Barra+da+Tijuca,+Rio+de+Janeiro+-+RJ&z=15&output=embed" title="Mapa com a localização do consultório" data-i18n-attr="title:map.title" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        <a class="btn map-link" href="https://www.google.com/maps/search/?api=1&query=Av.+das+Am%C3%A9ricas,+500+-+Barra+da+Tijuca,+Rio+de+Janeiro+-+RJ" target="_blank" rel="noopener">
+          <span data-i18n="map.directions">Como chegar</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="foot">
+      <a href="#inicio" class="brand">
+        <div class="brand-mark">VC</div>
+        <div class="brand-name">Dr. Victor Camillo<small data-i18n="brand.sub">Endocrinologia & Metabologia</small></div>
+      </a>
+      <ul class="foot-links">
+        <li><a href="#sobre" data-i18n="nav.about">Sobre</a></li>
+        <li><a href="#atendimento" data-i18n="nav.services">Atendimento</a></li>
+        <li><a href="#duvidas" data-i18n="nav.faq">Dúvidas</a></li>
+        <li><a href="#contato" data-i18n="nav.contact">Contato</a></li>
+        <li><a href="https://www.instagram.com/drvictorcamillo/" target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+    </div>
+    <div class="foot-bottom">
+      <span data-i18n="foot.id">Dr. Victor Camillo · Médico · CRM-RJ 52.131383-5</span>
+      <span>© <span id="year"></span> <span data-i18n="foot.rights">Todos os direitos reservados.</span></span>
+    </div>
+  </div>
+</footer>
+
+<a href="#" class="wa-float wa-link" aria-label="Falar pelo WhatsApp" data-i18n-attr="aria-label:wa.float" target="_blank" rel="noopener">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.4zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 0 1 12 2.2a9.8 9.8 0 0 1 0 19.6zm8.4-18.2A11.8 11.8 0 0 0 1.7 17.9L0 24l6.3-1.7A11.8 11.8 0 0 0 24 12c0-3.2-1.2-6.1-3.6-8.4z"/></svg>
+</a>
+
+<script>
+  const WHATSAPP = "5521993065466";
+
+  // Idiomas: o português fica no próprio HTML; aqui ficam só os textos em inglês
+  const EN = {
+    'meta.title': 'Dr. Victor Camillo | Endocrinology & Metabolism – Rio de Janeiro',
+    'meta.description': 'Dr. Victor Camillo – Endocrinologist in Rio de Janeiro, Brazil. Diabetes, obesity, thyroid, hormonal and metabolic disorders. CRM-RJ 52.131383-5.',
+    'brand.sub': 'Endocrinology & Metabolism',
+    'brand.home': 'Dr. Victor Camillo – home',
+    'nav.home': 'Home', 'nav.about': 'About', 'nav.services': 'Services', 'nav.faq': 'FAQ', 'nav.contact': 'Contact',
+    'nav.menu': 'Open menu',
+    'cta.book': 'Book an appointment',
+    'hero.eyebrow': 'Endocrinology & Metabolism · Rio de Janeiro',
+    'hero.title': 'Hormonal balance,<br>health at every stage.',
+    'hero.text': 'Dr. Victor Camillo provides close, personalized, evidence-based endocrine care — so you can understand your body and take care of your metabolism safely.',
+    'hero.areas': 'Areas of practice',
+    'hero.alt': 'Portrait of Dr. Victor Camillo, endocrinologist',
+    'about.eyebrow': 'About the doctor',
+    'about.title': 'Professional care with a human touch',
+    'about.p1': 'I’m Dr. Victor Camillo, a physician dedicated to Endocrinology and Metabolism — the specialty that looks after your hormones and how they affect energy, weight, sleep, mood, fertility and long-term health.',
+    'about.p2': 'I believe in unhurried appointments, attentive listening and clear explanations. Every treatment plan is built together with the patient, respecting their routine, goals and history.',
+    'about.l1': 'Thorough, individualized assessment',
+    'about.l2': 'Care based on the latest scientific guidelines',
+    'about.l3': 'Close, ongoing follow-up',
+    'svc.eyebrow': 'Areas of practice',
+    'svc.title': 'Comprehensive endocrine care',
+    'svc.lead': 'From prevention to the management of chronic conditions, with attention to every detail of your metabolism.',
+    'svc.1.t': 'Diabetes and prediabetes',
+    'svc.1.d': 'Diagnosis, blood sugar control and prevention of complications, with practical guidance for everyday life.',
+    'svc.2.t': 'Obesity and weight management',
+    'svc.2.d': 'Medical treatment of obesity with an individualized approach focused on health and sustainability.',
+    'svc.3.t': 'Thyroid',
+    'svc.3.d': 'Hypothyroidism, hyperthyroidism, nodules and thyroiditis — assessment and follow-up.',
+    'svc.4.t': 'Hormonal disorders',
+    'svc.4.d': 'Changes in sex, adrenal and pituitary hormones, including PCOS and menopause.',
+    'svc.5.t': 'Cholesterol and metabolism',
+    'svc.5.d': 'Dyslipidemia, insulin resistance and metabolic syndrome, with a focus on cardiovascular health.',
+    'svc.6.t': 'Bone health',
+    'svc.6.d': 'Prevention and treatment of osteoporosis and monitoring of vitamin D and calcium levels.',
+    'why.eyebrow': 'Why us',
+    'why.title': 'Why choose Dr. Victor',
+    'why.lead': 'Medicine that combines science, listening and partnership — for safe decisions about your health.',
+    'why.1.t': 'Individualized approach',
+    'why.1.d': 'Every patient is unique. Each appointment takes your history, habits and goals into account before any decision is made.',
+    'why.2.t': 'Evidence-based medicine',
+    'why.2.d': 'Constant updating and decisions grounded in the latest scientific guidelines, with safety first.',
+    'why.3.t': 'Trust and clarity',
+    'why.3.d': 'Simple explanations about tests and treatments, so you can take an active part in decisions about your health.',
+    'steps.eyebrow': 'How it works',
+    'steps.title': 'Your care journey',
+    'steps.1.t': 'Scheduling', 'steps.1.d': 'Get in touch via WhatsApp or the form and choose the best time for you.',
+    'steps.2.t': 'Complete consultation', 'steps.2.d': 'Detailed listening, physical examination and review of your history and previous tests.',
+    'steps.3.t': 'Personalized plan', 'steps.3.d': 'Goals and treatment defined together, with clear guidance.',
+    'steps.4.t': 'Follow-up', 'steps.4.d': 'Regular check-ins to adjust and monitor your progress.',
+    'test.eyebrow': 'Testimonials',
+    'test.title': 'What patients say',
+    'test.stars': '5 stars',
+    'test.1': 'Dr. Victor truly listens. He explains everything clearly and makes you feel supported at every stage of your care.',
+    'test.2': 'Attentive and thorough. I never felt rushed during the appointment — you can tell he genuinely cares about his patients.',
+    'test.3': 'After a long search, I finally found a doctor who combines knowledge and empathy. Highly recommended!',
+    'test.name': 'Patient name', 'test.role': 'Patient',
+    'faq.eyebrow': 'FAQ',
+    'faq.title': 'Common questions',
+    'faq.lead': 'Didn’t find your question? Talk directly to our team on WhatsApp.',
+    'faq.1.q': 'What does an endocrinologist do?',
+    'faq.1.a': 'An endocrinologist looks after the body’s glands and hormones — such as the thyroid, pancreas, adrenals and pituitary — and metabolic conditions such as diabetes, obesity and high cholesterol.',
+    'faq.2.q': 'When should I see an endocrinologist?',
+    'faq.2.a': 'If you have unexplained weight changes, excessive tiredness, abnormal blood sugar or cholesterol, thyroid changes, irregular periods, hair loss or menopause-related symptoms, among others.',
+    'faq.3.q': 'What should I bring to my first appointment?',
+    'faq.3.a': 'Bring recent test results (ideally from the last 6 to 12 months), a list of the medications you take and, if possible, reports from previous imaging exams.',
+    'faq.4.q': 'Do you offer online consultations?',
+    'faq.4.a': 'Please check telemedicine availability directly with our team on WhatsApp.',
+    'form.eyebrow': 'Appointments',
+    'form.title': 'Your health starts with a conversation',
+    'form.text': 'Fill in the details below and you’ll be redirected to WhatsApp to complete your booking.',
+    'form.name': 'Name*', 'form.namePh': 'Your full name',
+    'form.phone': 'Phone*', 'form.phonePh': '+55 21 90000-0000',
+    'form.reason': 'Reason for visit',
+    'form.opt1': 'First appointment', 'form.opt2': 'Follow-up', 'form.opt3': 'Diabetes', 'form.opt4': 'Obesity / weight management',
+    'form.opt5': 'Thyroid', 'form.opt6': 'Hormonal disorders', 'form.opt7': 'Other',
+    'form.msg': 'Message', 'form.msgPh': 'Briefly tell us how we can help',
+    'form.submit': 'Send via WhatsApp',
+    'form.note': 'Please don’t share sensitive health information here — it will be discussed during your appointment.',
+    'info.title': 'Contact details',
+    'info.address': 'Address',
+    'info.hours': 'Opening hours',
+    'info.hoursVal': '[Mon–Fri: 0:00 to 0:00]',
+    'map.title': 'Map showing the clinic location',
+    'map.directions': 'Get directions',
+    'foot.id': 'Dr. Victor Camillo · Physician · CRM-RJ 52.131383-5',
+    'foot.rights': 'All rights reserved.',
+    'wa.float': 'Chat on WhatsApp',
+  };
+
+  const WA_TEXT = {
+    pt: { hello: 'Olá! Gostaria de agendar uma consulta com o Dr. Victor Camillo.', name: 'Nome', phone: 'Telefone', reason: 'Motivo', msg: 'Mensagem' },
+    en: { hello: 'Hello! I’d like to book an appointment with Dr. Victor Camillo.', name: 'Name', phone: 'Phone', reason: 'Reason', msg: 'Message' },
+  };
+
+  // guarda os textos originais (português) para poder voltar
+  const PT = {
+    'meta.title': document.title,
+    'meta.description': document.querySelector('meta[name="description"]').content,
+  };
+  document.querySelectorAll('[data-i18n]').forEach(el => { PT[el.dataset.i18n] = el.innerHTML; });
+  document.querySelectorAll('[data-i18n-attr]').forEach(el => {
+    const [attr, key] = el.dataset.i18nAttr.split(':');
+    PT[key] = el.getAttribute(attr);
+  });
+
+  let lang = 'pt';
+  function setLang(next) {
+    lang = next;
+    const dict = next === 'en' ? EN : PT;
+    const get = key => dict[key] ?? PT[key];
+    document.documentElement.lang = next === 'en' ? 'en' : 'pt-BR';
+    document.title = get('meta.title');
+    document.querySelector('meta[name="description"]').content = get('meta.description');
+    document.querySelectorAll('[data-i18n]').forEach(el => { el.innerHTML = get(el.dataset.i18n); });
+    document.querySelectorAll('[data-i18n-attr]').forEach(el => {
+      const [attr, key] = el.dataset.i18nAttr.split(':');
+      el.setAttribute(attr, get(key));
+    });
+    document.querySelectorAll('.lang-switch button').forEach(b => b.setAttribute('aria-pressed', b.dataset.lang === next));
+    document.querySelectorAll('.wa-link').forEach(a => {
+      a.href = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(WA_TEXT[next].hello)}`;
+      a.target = '_blank'; a.rel = 'noopener';
+    });
+    try { localStorage.setItem('lang', next); } catch (e) {}
+  }
+
+  document.querySelectorAll('.lang-switch button').forEach(b => b.addEventListener('click', () => setLang(b.dataset.lang)));
+
+  // idioma inicial: ?lang=en na URL > escolha salva > idioma do navegador
+  let initial = new URLSearchParams(location.search).get('lang');
+  if (!initial) { try { initial = localStorage.getItem('lang'); } catch (e) {} }
+  if (!initial) initial = /^pt\b/i.test(navigator.language || 'pt') ? 'pt' : 'en';
+  setLang(initial === 'en' ? 'en' : 'pt');
+
+  document.getElementById('contactForm').addEventListener('submit', e => {
+    e.preventDefault();
+    const f = e.target;
+    const w = WA_TEXT[lang];
+    const text = [
+      w.hello,
+      `${w.name}: ${f.nome.value}`,
+      `${w.phone}: ${f.tel.value}`,
+      `${w.reason}: ${f.motivo.value}`,
+      f.msg.value && `${w.msg}: ${f.msg.value}`
+    ].filter(Boolean).join('\n');
+    window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
+  });
+
+  const toggle = document.getElementById('menuToggle');
+  const links = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => {
+    const open = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // FAQ: abre e fecha as respostas com animação suave
+  const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  document.querySelectorAll('.faq-list details').forEach(d => {
+    const summary = d.querySelector('summary');
+    const answer = d.querySelector('p');
+    let anim = null;
+    summary.addEventListener('click', e => {
+      if (reduceMotion.matches) return;
+      e.preventDefault();
+      const opening = !d.open || d.classList.contains('closing');
+      const start = d.offsetHeight;
+      if (anim) anim.cancel();
+      d.classList.toggle('closing', !opening);
+      d.open = true;
+      const cs = getComputedStyle(d);
+      const end = opening
+        ? d.offsetHeight
+        : summary.offsetHeight + parseFloat(cs.paddingTop) + parseFloat(cs.paddingBottom);
+      d.style.overflow = 'hidden';
+      anim = d.animate({ height: [start + 'px', end + 'px'] }, { duration: 350, easing: 'cubic-bezier(.4,0,.2,1)' });
+      answer.animate({ opacity: opening ? [0, 1] : [1, 0] }, { duration: opening ? 350 : 200, easing: 'ease', fill: 'forwards' });
+      anim.onfinish = () => {
+        if (!opening) { d.open = false; d.classList.remove('closing'); }
+        d.style.overflow = '';
+        anim = null;
+      };
+    });
+  });
+
+  const io = new IntersectionObserver(entries => entries.forEach(en => {
+    if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+  }), { threshold: .12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
